@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<title>Registration Form in HTML CSS</title>-->
+    <!---Custom CSS File--->
+    <!--<link rel="stylesheet" href="{% static 'css/cross.css' %}" />-->
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+  </head>
+  <body>
+
+    <section class="container">
+      <header>Formulaire d'inscription</header>
+      <form action="{% url 'final' %}" class="form" method="post">
+        {% csrf_token %}
+        <div class="input-box">
+          <label>Nom et prenom(s)</label>
+          <input name="nom" type="text" placeholder="John Doe" required />
+        </div>
+
+        <div class="input-box">
+          <label>Adresse email</label>
+          <input  name="email" type="text" placeholder="exemple@ex.com" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Numéro</label>
+            <input name="numero" type="text" placeholder="00(225)0515331878" required />
+          </div>
+          <div class="input-box">
+            <label>Age</label>
+            <input type="number" placeholder="20" required />
+          </div>
+        </div>
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">prefer not to say</label>
+            </div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Addresses</label>
+          <input type="text" placeholder="Ville" required />
+          <input type="text" placeholder="Quartier / rue " required />
+          
+        </div>
+        <button type="submit">Soumettre</button>
+      </form>
+    </section>
+    
+  </body>
+
+ <!-- {% include 'partials/footer.html' %}-->
+
+<script src="{% static 'js/script.js' %}" defer></script>
+</html>

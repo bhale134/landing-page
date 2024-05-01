@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>Airplayce - Business as a service</title>
+  <meta name="title" content="EduWeb - The Best Program to Enroll for Exchange">
+  <meta name="description" content="This is an education html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'img/LOGO_simp.png' %}" >
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'img/hero-bg.svg' %}">
+  <link rel="preload" as="image" href="{% static 'img/hero-banner-1.jpg' %}">">
+  <link rel="preload" as="image" href="{% static 'img/hero-banner-2.jpg' %}">
+  <link rel="preload" as="image" href="{% static 'img/hero-shape-1.svg' %}">
+  <link rel="preload" as="image" href="{% static 'img/hero-shape-2.png' %}">
+  <style>
+    .message{
+        margin: 5%;
+        padding: 40px;
+        
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        border: 1px solid grey;
+    }
+    .message i{
+        margin: 30px;
+        font-size: 28px;
+        color: green;
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+   {% include 'partials/header.html' %}
+
+  </header>
+
+  <div class="message">
+    <div class="content">
+        <h2>inscription réussie</h2>
+        <p>Nous rentrerons en contact avec sous peu (24h max) </p>
+        <p>Contactez nous au : 0777636317 </p>
+    </div>
+    <i class="fa fa-check"></i>
+
+  </div>
+
+  {% include 'partials/footer.html' %}
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'js/script.js' %}" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+{% load static %}
+<div class="container">
+
+    <a href="#" class="logo">
+      <img src="{% static 'img/logo-bg.png' %}" width="162" height="50" alt="EduWeb logo">
+    </a>
+
+    <nav class="navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <img src="{% static 'img/logo.svg' %}" width="162" height="50" alt="EduWeb logo">
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+        <li class="navbar-item">
+          <a href="#home" class="navbar-link" data-nav-link>Accueil</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="#about" class="navbar-link" data-nav-link>À propos</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="#courses" class="navbar-link" data-nav-link>Solutions</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="#" class="navbar-link" data-nav-link>Contact</a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+    <div class="header-actions">
+
+      <button class="header-action-btn" aria-label="toggle search" title="Search">
+        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <button class="header-action-btn" aria-label="cart" title="Cart">
+        <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+
+        <span class="btn-badge">0</span>
+      </button>
+
+      <a href="{% url 'register' %}" class="btn has-before">
+        <span class="span">S'inscrire</span>
+
+        <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+      </a>
+
+      <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+
+  </div>

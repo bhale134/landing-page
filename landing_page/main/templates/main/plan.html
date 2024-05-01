@@ -1,0 +1,242 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>Airplayce - Business as a service</title>
+  <meta name="title" content="EduWeb - The Best Program to Enroll for Exchange">
+  <meta name="description" content="This is an education html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'img/LOGO_simp.png' %}" >
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'css/plan.css' %}">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'img/hero-bg.svg' %}">
+  <link rel="preload" as="image" href="{% static 'img/hero-banner-1.jpg' %}">">
+  <link rel="preload" as="image" href="{% static 'img/hero-banner-2.jpg' %}">
+  <link rel="preload" as="image" href="{% static 'img/hero-shape-1.svg' %}">
+  <link rel="preload" as="image" href="{% static 'img/hero-shape-2.png' %}">
+
+</head>
+<style>
+  #home{
+    background-image: url("{% static 'img/hero-bg.svg' %}");
+  }
+
+  
+  #video-img-bg{
+    background-image: url("{% static 'img/video-bg.png' %}");
+  }
+
+  .footer{
+    background-image: url("{% static 'img/footer-bg.png' %}");
+  }
+</style>
+<body id="top">
+     
+  <div class="header">
+    {% include 'partials/header.html' %}
+  </div>
+      
+      <main>
+        <div class="title">
+            <h3 class="plan_title">Choisissez un plan</h3>
+        </div>
+        <div class="container-plan">
+            <div class="plan_item">
+                <p class="plan_name">Basic</p>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active">Site web</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active">Nom de sous domaine</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active">Appli mobile</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active">Email alerting</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check" style="font-size: 25px;" ></i>
+                    <span >Whatsapp message</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check" style="font-size: 25px;" ></i>
+                    <span >Plus de templates</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check" style="font-size: 25px;" ></i>
+                    <span >Nom de domaine</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check" style="font-size: 25px;" ></i>
+                    <span >Payment(Bancaire)</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check " style="font-size: 25px;" ></i>
+                    <span >Payment(Orange,Wave)</span>
+                </div>
+                <div class="price">
+                    <div class="reduc">
+                        <p>20000FCFA</p>
+                    </div>
+                    <div class="reduction">
+                        <p> -25%/an</p>
+                    </div>
+                    <div class="price_final">
+                        <p>15000FCFA/mois</p>
+                    </div>
+                </div>
+                <div class="btn-plan_item">
+                    <button class="btn-plan">Valider</button>
+                </div>
+
+            </div>
+            <div class="plan_item choix">
+                <p class="plan_name">Avancé</p>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active">Site web</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active">Nom de sous domaine</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active">Appli mobile</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active">Email alerting</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active">Whatsapp message</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active" >Plus de templates</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check" style="font-size: 25px;" ></i>
+                    <span >Nom de domaine</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check" style="font-size: 25px;" ></i>
+                    <span>Payment(Bancaire)</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check" style="font-size: 25px;" ></i>
+                    <span>Payment(Orange,Wave)</span>
+                </div>
+                <div class="price">
+                    <div class="reduc">
+                        <p>35000FCFA</p>
+                    </div>
+                    <div class="reduction">
+                        <p> -30%/an</p>
+                    </div>
+                    <div class="price_final">
+                        <p>24500FCFA/mois</p>
+                    </div>
+                </div>
+                <div class="btn-plan_item">
+                    <button class="btn-plan">Valider</button>
+                </div>
+            </div>
+            <div class="plan_item">
+                <p class="plan_name">Entreprise</p>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active">Site web</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active">Nom de sous domaine</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active">Appli mobile</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active">Email alerting</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active">Whatsapp message</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active" >Plus de templates</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active" >Nom de domaine</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active" >Payment(Bancaire)</span>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-check active" style="font-size: 25px;" ></i>
+                    <span class="active">Payment(Orange,Wave)</span>
+                </div>
+                <div class="price">
+                    <div class="reduc">
+                        <p>45000FCFA</p>
+                    </div>
+                    <div class="reduction">
+                        <p> -35%/an</p>
+                    </div>
+                    <div class="price_final">
+                        <p>29250FCFA/mois</p>
+                    </div>
+                </div>
+                <div class="btn-plan_item">
+                    <button class="btn-plan">Valider</button>
+                </div>
+            </div>
+        </div>
+      </main>
+</body>
+
+
+{% include 'partials/footer.html' %}
+<script src="{% static 'js/script.js' %}" defer></script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
