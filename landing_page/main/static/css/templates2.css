@@ -269,7 +269,8 @@
   
   .grid-list {
     display: grid;
-    gap: 30px;
+    gap: 20px;
+   
   }
   
   .category-card,
@@ -525,8 +526,11 @@ main{
 
 /*TEMPLATES*/
 .grid-list { 
-    margin-left: 7%;
-    grid-template-columns: 1fr 1fr; }
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 
 :is(.course, .blog) .grid-list { grid-template-columns: 1fr; }
 .course { background-color: var(--isabelline); }
@@ -536,6 +540,9 @@ main{
   background-color: var(--white);
   border-radius: var(--radius-5);
   overflow: hidden;
+  box-shadow: 2px 2px 2px 3px rgb(235, 232, 232);
+  margin-right: 10px;
+  width: 400px;
 }
 
 .course-card .img-cover { transition: var(--transition-2); }

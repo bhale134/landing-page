@@ -40,3 +40,9 @@ def final_page(request):
     return render(request,'main/final_page.html',context)
 
 
+def politique(request):
+
+    return render(request,"politique")
+def service(request):
+
+    return render(request,"service")

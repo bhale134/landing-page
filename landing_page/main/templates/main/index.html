@@ -93,7 +93,7 @@
               Des Sites Web Professionnels Clés en Main Pour Tous les Secteurs d'activité
             </p>
 
-            <a href="" class="btn has-before">
+            <a href="{% url 'templates' %}" class="btn has-before">
               <span class="span">Commençons</span>
 
               <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -334,89 +334,28 @@
 
             <li>
               <div class="course-card">
-
+  
                 <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
-                  <img src="{% static 'img/ecom.png' %}" width="370" height="220" loading="lazy"
-                    alt="Build Responsive Real- World Websites with HTML and CSS" class="img-cover">
-                </figure>
-
-                <div class="abs-badge">
-                  <!--
-                   <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-                  -->
-                  
-                  <span class="span">-30% annuel</span>
-                </div>
-
-                <div class="card-content">
-
-                  <span class="badge">Avancé</span>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Site de ventes d'articles adaptés pour le shopping</a>
-                  </h3>
-
-                  <div class="wrapper">
-
-                    <div class="rating-wrapper">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-
-                    <p class="rating-text">(5.0/7 note)</p>
-
-                  </div>
-
-                  <data class="price" value="29">24.500FCFA</data>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">8 achats</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">230 utilisateurs</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="course-card">
-
-                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
-                  <img src="{% static 'img/gym.jpg' %}" width="370" height="220" loading="lazy"
+                  <img src="{% static 'img/templates/ecom3.png' %}" width="370" height="220" loading="lazy"
                     alt="Java Programming Masterclass for Software Developers" class="img-cover">
                 </figure>
-
+  
                 <div class="abs-badge">
                   <!--<ion-icon name="time-outline" aria-hidden="true"></ion-icon>-->
-
-                  <span class="span">30%</span>
+  
+                  <a href="https://themewagon.github.io/zay-shop/" target="_blank"><span class="span">Preview</span></a>
                 </div>
-
+  
                 <div class="card-content">
-
+  
                   <span class="badge">Avancé</span>
-
+  
                   <h3 class="h3">
-                    <a href="#" class="card-title">Site pour des salles de gym idéal pour les sportifs</a>
+                    <a href="#" class="card-title">Site de ventes idéal pour la vente d'articles</a>
                   </h3>
-
+  
                   <div class="wrapper">
-
+  
                     <div class="rating-wrapper">
                       <ion-icon name="star"></ion-icon>
                       <ion-icon name="star"></ion-icon>
@@ -424,58 +363,46 @@
                       <ion-icon name="star"></ion-icon>
                       <ion-icon name="star"></ion-icon>
                     </div>
-
                     <p class="rating-text">(4.5 /9 Note)</p>
-
                   </div>
-
                   <data class="price" value="49">24.500FCFA</data>
-
                   <ul class="card-meta-list">
-
+  
                     <li class="card-meta-item">
                       <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
-
                       <span class="span">3 achats</span>
                     </li>
-
+  
                     <li class="card-meta-item">
                       <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
-
                       <span class="span">177 utilisateurs</span>
                     </li>
-
+  
                   </ul>
-
+  
                 </div>
-
+  
               </div>
             </li>
 
             <li>
               <div class="course-card">
-
                 <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
-                  <img src="{% static 'img/resto.png' %}" width="370" height="220" loading="lazy"
+                  <img src="{% static 'img/templates/gym3.png' %}" width="370" height="220" loading="lazy"
                     alt="The Complete Camtasia Course for Content Creators" class="img-cover">
                 </figure>
-
                 <div class="abs-badge">
                   <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                  <span class="span">3 Weeks</span>
+                  <a href="https://themewagon.github.io/gym/" target="_blank"><span class="span">Preview</span></a>
                 </div>
-
                 <div class="card-content">
-
                   <span class="badge entreprise">Entreprise</span>
-
                   <h3 class="h3">
-                    <a href="#" class="card-title">Site web pour des restaurants haut standing</a>
+                    <a href="https://themewagon.github.io/gym/" target="_blank" class="card-title">Site web pour des salles de gym</a>
                   </h3>
-
+  
                   <div class="wrapper">
-
+  
                     <div class="rating-wrapper">
                       <ion-icon name="star"></ion-icon>
                       <ion-icon name="star"></ion-icon>
@@ -483,31 +410,66 @@
                       <ion-icon name="star"></ion-icon>
                       <ion-icon name="star"></ion-icon>
                     </div>
-
                     <p class="rating-text">(4.9 /7 note)</p>
-
                   </div>
-
                   <data class="price" value="35">29250FCFA</data>
-
                   <ul class="card-meta-list">
-
                     <li class="card-meta-item">
                       <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
-
                       <span class="span">4 achats</span>
                     </li>
-
                     <li class="card-meta-item">
                       <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
-
                       <span class="span">400 utilisateurs</span>
                     </li>
-
                   </ul>
-
+  
                 </div>
+  
+              </div>
+            </li>
 
+            <li>
+              <div class="course-card">
+                <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                  <img src="{% static 'img/templates/resto1.png' %}" width="370" height="220" loading="lazy"
+                    alt="The Complete Camtasia Course for Content Creators" class="img-cover">
+                </figure>
+                <div class="abs-badge">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                  <a href="https://themewagon.github.io/restaurantly/" target="_blank"><span class="span">Preview</span></a>
+                </div>
+                <div class="card-content">
+                  <span class="badge entreprise">Entreprise</span>
+                  <h3 class="h3">
+                    <a href="https://themewagon.github.io/restaurantly/" target="_blank" class="card-title">Site web pour des restaurants haut standing</a>
+                  </h3>
+  
+                  <div class="wrapper">
+  
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                    <p class="rating-text">(4.9 /7 note)</p>
+                  </div>
+                  <data class="price" value="35">29250FCFA</data>
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+                      <span class="span">4 achats</span>
+                    </li>
+                    <li class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+                      <span class="span">400 utilisateurs</span>
+                    </li>
+                  </ul>
+  
+                </div>
+  
               </div>
             </li>
 
@@ -618,9 +580,9 @@
         style="background-image: url('./assets/images/blog-bg.svg')">
         <div class="container">
 
-          <p class="section-subtitle">Latest Articles</p>
+          <p class="section-subtitle">Publicités</p>
 
-          <h2 class="h2 section-title">Get News With Eduweb</h2>
+          <h2 class="h2 section-title">Plus de visibilité web pour votre business </h2>
 
           <ul class="grid-list">
 
@@ -628,7 +590,7 @@
               <div class="blog-card">
 
                 <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
-                  <img src="{% static 'img/blog-1.jpg' %}" width="370" height="370" loading="lazy"
+                  <img src="{% static 'img/Ads.png' %}" width="370" height="370" loading="lazy"
                     alt="Become A Better Blogger: Content Planning" class="img-cover">
                 </figure>
 
@@ -641,7 +603,7 @@
                   <a href="#" class="card-subtitle">Online</a>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Become A Better Blogger: Content Planning</a>
+                    <a href="#" class="card-title">Créer du traffic sur votre site via tiktok</a>
                   </h3>
 
                   <ul class="card-meta-list">
@@ -661,7 +623,7 @@
                   </ul>
 
                   <p class="card-text">
-                    Lorem Ipsum Dolor Sit Amet Cons Tetur Adipisicing Sed.
+                    Entrer en contact avec des community managers expérimentés
                   </p>
 
                 </div>
@@ -673,7 +635,7 @@
               <div class="blog-card">
 
                 <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
-                  <img src="{% static 'img/blog-2.jpg' %}" width="370" height="370" loading="lazy"
+                  <img src="{% static 'img/insta.webp' %}" width="370" height="370" loading="lazy"
                     alt="Become A Better Blogger: Content Planning" class="img-cover">
                 </figure>
 
@@ -686,7 +648,7 @@
                   <a href="#" class="card-subtitle">Online</a>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Become A Better Blogger: Content Planning</a>
+                    <a href="#" class="card-title">Créer du traffic sur votre site via instagram</a>
                   </h3>
 
                   <ul class="card-meta-list">
@@ -706,7 +668,7 @@
                   </ul>
 
                   <p class="card-text">
-                    Lorem Ipsum Dolor Sit Amet Cons Tetur Adipisicing Sed.
+                    Entrer en contact avec des community managers expérimentés
                   </p>
 
                 </div>
@@ -718,7 +680,7 @@
               <div class="blog-card">
 
                 <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
-                  <img src="{% static 'img/blog-3.jpg' %}" width="370" height="370" loading="lazy"
+                  <img src="{% static 'img/facebook-ads.png' %}" width="370" height="370" loading="lazy"
                     alt="Become A Better Blogger: Content Planning" class="img-cover">
                 </figure>
 
@@ -731,7 +693,7 @@
                   <a href="#" class="card-subtitle">Online</a>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Become A Better Blogger: Content Planning</a>
+                    <a href="#" class="card-title">Créer du traffic sur votre site via facebook</a>
                   </h3>
 
                   <ul class="card-meta-list">
@@ -751,7 +713,7 @@
                   </ul>
 
                   <p class="card-text">
-                    Lorem Ipsum Dolor Sit Amet Cons Tetur Adipisicing Sed.
+                    Entrer en contact avec des community managers expérimentés 
                   </p>
 
                 </div>

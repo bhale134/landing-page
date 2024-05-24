@@ -20,19 +20,15 @@
       <ul class="navbar-list">
 
         <li class="navbar-item">
-          <a href="#home" class="navbar-link" data-nav-link>Accueil</a>
+          <a href="{% url 'index' %}" class="navbar-link" data-nav-link>Accueil</a>
         </li>
 
         <li class="navbar-item">
-          <a href="#about" class="navbar-link" data-nav-link>À propos</a>
+          <a href="{% url 'templates' %}" class="navbar-link" data-nav-link>Solutions</a>
         </li>
 
         <li class="navbar-item">
-          <a href="#courses" class="navbar-link" data-nav-link>Solutions</a>
-        </li>
-
-        <li class="navbar-item">
-          <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          <a href="{% url 'plan' %}" class="navbar-link" data-nav-link>Prix</a>
         </li>
 
         <li class="navbar-item">
