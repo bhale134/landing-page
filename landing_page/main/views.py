@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .gmail import envoi_mail
+import threading
 # Create your views here.
 
 
@@ -34,7 +35,9 @@ def final_page(request):
         numero = request.POST.get('numero')
         email = request.POST.get('email')
         age = request.POST.get('nom')
-        envoi_mail(nom,email,numero)
+        t = threading.Thread(target=envoi_mail,args=(nom,email,numero))
+        t.start()
+        
     context ={}
 
     return render(request,'main/final_page.html',context)

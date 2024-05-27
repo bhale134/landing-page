@@ -202,6 +202,7 @@ gmail_cfg = {
     "pwd": "oowznnhrtzobpcfp"
     
  }
+
 def envoi_mail(nom,email,numero):
 
     msg = MIMEMultipart("alternative")
