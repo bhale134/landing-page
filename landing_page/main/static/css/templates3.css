@@ -513,10 +513,11 @@ main{
 }
 
 .filter .select-filter{
-    width: 160px;
+    width: 200px;
     height: 40px;
     background-color: white;
-    border: 1px solid var(--kappel);
+    border: 3px solid var(--kappel);
+    font-size: 20px;
 }
 .filter .select-filter option{
     font-size: 18px;
@@ -668,7 +669,24 @@ main{
   
     :is(.course, .blog) .grid-list { grid-template-columns: 1fr; }
   
-  
+    main{
+      margin-top: 10%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5%;
+  }
+  .title{
+      display: flex;
+      justify-content: space-between;
+      padding: 50px;
+  }
+  .plan-template-nb{
+    display: none;
+  }
+  .filter-btn{
+    display: none;
+  }
   
     /**
      * HEADER
@@ -703,7 +721,7 @@ main{
     .stats-card { padding: 40px 30px; }
   
   
-  
+    
     /**
      * FOOTER
      */
@@ -736,7 +754,7 @@ main{
     /**
      * CUSTOM PROPERTY
      */
-  
+    
     :root {
   
       /**
@@ -759,7 +777,12 @@ main{
     .btn { padding: 15px 30px; }
   
     :is(.course, .blog) .grid-list { grid-template-columns: 1fr 1fr; }
-  
+    .plan-template-nb{
+      display: none;
+    }
+    .filter-btn{
+      display: none;
+    }
   
   
     /**
