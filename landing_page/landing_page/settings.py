@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-o3js3gip^jh&mbrao0s+t9hnz62!q@wpd6a9ap!0m)xzixr$v#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["airplayce.com","www.airplayce.com"]
+ALLOWED_HOSTS = ["airplayce.com","www.airplayce.com","127.0.0.1"]
 
 
 # Application definition
@@ -124,3 +124,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CSRF_TRUSTED_ORIGINS = ['https://airplayce.com','https://www.airplayce.com']

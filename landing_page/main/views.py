@@ -34,8 +34,8 @@ def final_page(request):
         nom = request.POST.get('nom')
         numero = request.POST.get('numero')
         email = request.POST.get('email')
-        age = request.POST.get('nom')
-        t = threading.Thread(target=envoi_mail,args=(nom,email,numero))
+        code_promo = request.POST.get('code')
+        t = threading.Thread(target=envoi_mail,args=(nom,email,numero,code_promo))
         t.start()
         
     context ={}

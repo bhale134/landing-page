@@ -6,7 +6,7 @@ from email.mime.text import MIMEText
 from email.utils import formataddr
 
 
-def remplir_html(numero,email,nom,):
+def remplir_html(numero,email,nom,code):
 
     html = """
     <!DOCTYPE html>
@@ -22,6 +22,7 @@ def remplir_html(numero,email,nom,):
         <p> Numero :"""+numero+ """</p>
         <p> Nom :"""+nom+ """</p>
         <p> Email :"""+email+ """</p>
+        <p> Code Promo :"""+code+ """ </p>
 
     </body>
     <style>
@@ -203,14 +204,14 @@ gmail_cfg = {
     
  }
 
-def envoi_mail(nom,email,numero):
+def envoi_mail(nom,email,numero,code):
 
     msg = MIMEMultipart("alternative")
     msg['from'] = formataddr(('Airplayce',"bhalesilvere@gmail.com"))
     msg['Subject'] = "[Urgent] Client: Ajout de nouveau"
     msg['to'] = "bhalesilvere@gmail.com"
 
-    html = remplir_html(numero=numero,nom=nom,email=email)
+    html = remplir_html(numero=numero,nom=nom,email=email,code=code)
 
     part = MIMEText(html, "html")
 

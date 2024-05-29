@@ -139,6 +139,33 @@
     font-size: 1.6rem;
     line-height: 1.75;
   }
+
+  .inscrip{
+    background-color: var(--kappel);
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+
+  .inscrip:hover{
+    background-color:white ;
+    color:var(--kappel);
+    font-weight: 500;
+    font-size: 20px;
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    border: 3px solid var(--kappel);
+    margin-left: 10%;
+    margin-top: 5%;
+   
+  }
   
   :focus-visible { outline-offset: 4px; }
   
@@ -651,7 +678,12 @@ main{
 }
 
 /*MediaQuery*/
-
+.plan-template-nb{
+  display: none;
+}
+.filter-btn{
+  display: none;
+}
 
 @media (min-width: 575px) {
 
@@ -676,17 +708,24 @@ main{
       flex-direction: column;
       margin-bottom: 5%;
   }
+  .inscrip{
+    background-color: var(--kappel);
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10%;
+    margin-top: 2%;
+  }
   .title{
       display: flex;
       justify-content: space-between;
       padding: 50px;
   }
-  .plan-template-nb{
-    display: none;
-  }
-  .filter-btn{
-    display: none;
-  }
+  
   
     /**
      * HEADER
@@ -777,12 +816,8 @@ main{
     .btn { padding: 15px 30px; }
   
     :is(.course, .blog) .grid-list { grid-template-columns: 1fr 1fr; }
-    .plan-template-nb{
-      display: none;
-    }
-    .filter-btn{
-      display: none;
-    }
+
+    
   
   
     /**
@@ -796,7 +831,7 @@ main{
       padding: 10px 30px;
       margin-inline: 20px;
     }
-  
+    
   
   
     /**
